@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.main-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.column {
+  display: flex;
+}
+
+.column img {
+  width: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.column h2 {
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 95%);
+}
+
+.column p {
+  line-height: 1.2rem;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: hsl(0, 0%, 95%);
+}
+
+button {
+  margin-top: 50px;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.column-1 {
+  width: 33.33%;
+  background: hsl(31, 77%, 52%);
+  padding: 2rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.column-2 {
+  width: 33.33%;
+  background: hsl(184, 100%, 22%);
+  padding: 2rem;
+}
+
+.column-3 {
+  width: 33.33%;
+  background: hsl(179, 100%, 13%);
+  padding: 2rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  body {
+    background: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column-1 {
+    width: 250px;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .column-2 {
+    width: 250px;
+  }
+
+  .column-3 {
+    width: 250px;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  button {
+    margin-top: 0;
+  }
+}
